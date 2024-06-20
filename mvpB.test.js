@@ -16,6 +16,7 @@ describe('Sprint 7 Challenge Learner Tests', () => {
   */
 
   /*
+
   👉 TASK 2 - Integration Testing of HelloWorld component at the bottom of this module
 
   Test the <HelloWorld /> component found below...
@@ -29,6 +30,31 @@ describe('Sprint 7 Challenge Learner Tests', () => {
     [5] renders a text that reads "JavaScript is pretty awesome"
     [6] renders a text that includes "javaScript is pretty" (use exact = false)
   */
+ // HelloWorld.test.js
+      // sum.test.js
+
+      const sum = require('./sum');
+
+      test('test all scenarios for sum function', () => {
+      
+        // Test that sum correctly adds two numbers
+      
+        expect(sum(1, 2)).toBe(3);
+      
+        // Test that sum correctly converts string numbers and adds them
+      
+        expect(sum("1", 2)).toBe(3);
+      
+        // Test that sum throws an error when the first argument is not a number
+      
+        expect(() => sum("a", 2)).toThrow('pass valid numbers');
+      
+        // Test that sum throws an error when the second argument is not a number
+      
+        expect(() => sum(1, "b")).toThrow('pass valid numbers');
+      
+      });)).toBeInTheDocument();
+});
   test('you can comment out this test', () => {
     expect(true).toBe(false)
   })
